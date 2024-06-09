@@ -1,0 +1,158 @@
+main {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0 14.8vw;
+    background-color: rgb(12, 12, 12);
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('../assets/fonts/Norse-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.leftDiv {
+    float: left;
+    width: 27.34375vw;
+}
+
+    .leftDiv #background {
+        position: absolute;
+        height: 100vh;
+        max-width: 27.34375vw;
+    }
+
+    .leftDiv .inline {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 22vh;
+        left: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        width: 25.34375vw;
+        height: 8rem;
+        z-index: 1;
+        padding: 0.5vh 0;
+    }
+
+        .inline #logo {
+            display: inline-block;
+            position: relative;
+            width: 5.5rem;
+        }
+
+        .inline #title {
+            display: inline-block;
+            position: relative;
+            font-size: 5.5rem;
+            color: white;
+            font-family: 'Norse';
+            padding: 0;
+        }
+
+    #photo {
+        position: relative;
+        text-align: center;
+        align-items: center;
+        color: white;
+        opacity: 0.7;
+        top: 80vh;
+        z-index: 1;
+    }
+
+        #photo u {
+            cursor: pointer;
+        }
+
+.rightDiv {
+    background-color: rgb(244, 244, 244);
+    float: right;
+    max-width: 43;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+    .rightDiv .motivationalQuote {
+        margin-right: 5vw;
+        padding: 15vh 2.5vw 2vh;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .rightDiv .signUpWrapper {
+        background-color: white;
+        height: 30vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .signUpWrapper .signUp {
+            color: rgb(19, 19, 19);
+            font-size: smaller;
+            font-family: sans-serif;
+            padding: 1vh 2.5vw;
+            margin-right: 5vw;
+        }
+
+            .signUp .Forms {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .signUp h2  {
+                margin-bottom: 2vh;
+            }
+
+            .signUp label {
+                font-size: 12px;
+                font-weight: bolder;
+                color: rgb(77, 77, 77);
+            }
+
+            .signUp input {
+                all: unset;
+                width: 12vw;
+                margin-top: 2px;
+                border: 1px solid #E5E7EB;
+                border-radius: 5px;
+                padding: 5px 10px;
+            }
+
+            .signUp input:focus {
+                border: 1px solid blue;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .signUp input #pass:invalid, .signUp input #passConf:invalid {
+                border: 1px solid red;
+            }
+
+.others {
+    padding: 2.5vw;
+    font-weight: bold;
+}
+
+    .others button {
+        all: unset;
+        width: 10vw;
+        background-color: #596D48;
+        padding: 1vw;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .others a {
+        all: unset;
+        color: #596D48;
+        cursor: pointer;
+    }
